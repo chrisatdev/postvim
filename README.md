@@ -62,7 +62,7 @@ Then, run `:PackerSync` in Neovim.
 ### Keybinding
 You can customize this by mapping it to another key combination in your init.vim or init.lua:
 ```lua
-nnoremap <leader>r :lua require('neovim-rest-plugin').execute()<CR>
+nnoremap <leader>r :lua require('postvim').execute()<CR>
 
 ```
 
