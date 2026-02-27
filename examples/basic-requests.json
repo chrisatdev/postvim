@@ -1,0 +1,34 @@
+[
+  {
+    "method": "GET",
+    "url": "https://httpbin.org/get"
+  },
+  {
+    "method": "GET",
+    "url": "https://httpbin.org/headers",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "PostVim/2.0"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://httpbin.org/post",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{\"name\": \"John Doe\", \"email\": \"john@example.com\", \"age\": 30}"
+  },
+  {
+    "method": "PUT",
+    "url": "https://httpbin.org/put",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{\"id\": 123, \"name\": \"Updated Name\"}"
+  },
+  {
+    "method": "DELETE",
+    "url": "https://httpbin.org/delete"
+  }
+]

@@ -1,0 +1,46 @@
+### Simple GET request
+GET https://httpbin.org/get
+
+### GET with headers
+GET https://httpbin.org/headers
+Accept: application/json
+User-Agent: PostVim/2.0
+
+### GET with query parameters (in URL)
+GET https://httpbin.org/get?name=John&age=30
+
+### POST with JSON body
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "age": 30
+}
+
+### POST with form data
+POST https://httpbin.org/post
+Content-Type: application/x-www-form-urlencoded
+
+name=John&email=john@example.com
+
+### PUT request
+PUT https://httpbin.org/put
+Content-Type: application/json
+
+{
+  "id": 123,
+  "name": "Updated Name"
+}
+
+### DELETE request
+DELETE https://httpbin.org/delete
+
+### PATCH request
+PATCH https://httpbin.org/patch
+Content-Type: application/json
+
+{
+  "status": "active"
+}

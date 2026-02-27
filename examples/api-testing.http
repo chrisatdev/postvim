@@ -1,0 +1,45 @@
+### Test public API - Get random user
+GET https://randomuser.me/api/
+
+### GitHub API - Get user info
+GET https://api.github.com/users/chrisatdev
+Accept: application/vnd.github.v3+json
+
+### GitHub API - Get repositories
+GET https://api.github.com/users/chrisatdev/repos
+Accept: application/vnd.github.v3+json
+
+### JSONPlaceholder - Get posts
+GET https://jsonplaceholder.typicode.com/posts
+
+### JSONPlaceholder - Get specific post
+GET https://jsonplaceholder.typicode.com/posts/1
+
+### JSONPlaceholder - Create post
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "title": "Test Post",
+  "body": "This is a test post created with PostVim",
+  "userId": 1
+}
+
+### JSONPlaceholder - Update post
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Title",
+  "body": "Updated content",
+  "userId": 1
+}
+
+### JSONPlaceholder - Delete post
+DELETE https://jsonplaceholder.typicode.com/posts/1
+
+### Test API with authentication (replace with your token)
+GET https://api.github.com/user
+Authorization: Bearer YOUR_GITHUB_TOKEN_HERE
+Accept: application/vnd.github.v3+json
